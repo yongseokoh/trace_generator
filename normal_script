@@ -1,0 +1,7 @@
+./trace_generator_normal.py write_rand_4k.txt 0 0 4 4096
+./trace_generator_normal.py write_seq_128k.txt 0 1 128 4096
+./trace_generator_normal.py read_rand_4k.txt 1 0 4 4096
+./trace_generator_normal.py read_seq_128K.txt 1 1 128 4096
+
+./trace_generator_normal.py write_seq_512k.txt 0 1 512 4096
+./trace_generator_normal.py write_seq_1024k.txt 0 1 1024 4096
