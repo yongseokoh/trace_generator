@@ -28,7 +28,7 @@ def make_trace(filename, blklist, readflag):
 
 
 # main program 
-if len(sys.argv) != 4 :
+if len(sys.argv) != 5 :
 	print >> sys.stderr, " Invalid args "  
 	print >> sys.stderr, " ./trace_generator [outputfile] [rw] [alpha value] [req total size in MB]"
 	print >> sys.stderr, " rw: read = 1, write = 0"
@@ -37,7 +37,7 @@ if len(sys.argv) != 4 :
 
 
 filename = sys.argv[1] 
-rw = sys.argv[2] 
+rw = int(sys.argv[2])
 alpha = double(sys.argv[3])
 size = sys.argv[4]
 pages = int(size)*256
